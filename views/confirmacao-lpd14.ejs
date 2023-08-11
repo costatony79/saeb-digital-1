@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="wnameth=device-wnameth, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Resultado</title>
+    </head>
+<body>
+    <div class="container">
+        <div class="display-3 text-center"><%= descritor.toUpperCase() %></div>
+        <hr>
+        <div class="h7">NOME:</div>
+        <div class="display-5"><%= nome.toUpperCase() %></div>
+        <hr>
+        <div class="h7">SUAS RESPOSTAS:</div>
+        <table class="table table-dark table-hover">
+            <thead>           
+                <th>Q1:</th>
+                <th>Q2:</th>
+                <th>Q3:</th>
+                <th>Q4:</th>
+                <th>Q5:</th>
+                <th>Q6:</th>
+                <th>Q7:</th>
+                <th>Q8:</th>
+                <th>Q9:</th>
+                <th>Q10:</th>
+            </thead>
+            <tbody>         
+                
+                <tr>
+                    <% respostas.forEach(function(respostas) { %>
+                        <td><%= respostas.toUpperCase() %></td>        
+                        <% }); %> 
+                    </tr>
+                    
+                    <% 
+                let count = 0;
+                for (let i = 0; i < respostas.length; i++) {
+                    if (respostas[i].toUpperCase() === reslpd2[i]) {
+                        count++;
+                    }
+                }
+                %>
+        </tbody>
+    </table>
+    <div class="display-3 text-center">RESULTADO</div>
+    <hr>
+    <div id="resultado" class="bg-primary text-center">Você fez <%= count %> pontos</div>
+    
+    <div id="nota" class="bg-primary text-center">
+        <% if (count < 4) { %>
+            <p>Você precisa refazer a atividade. Leia com mais atenção os textos.</p>
+        <% } else if (count >= 4 && count <= 6) { %>
+            <p>Precisa melhorar, leia os textos com mais atenção. Atente também para as opções de resposta.</p>
+        <% } else if (count >= 7 && count <= 9) { %>
+            <p>Muito bem, mas ainda não está perfeito. Refaça com mais atenção para responder corretamente <b>TODAS</b> as questões.</p>
+        <% } else  { %>
+            <p><b>PERFEITO</b>, VOCÊ DOMINOU ESSE DESCRITOR! AGORA PASSE PARA OUTRO DESCRITOR E FAÇA O MESMO.</p>
+        <% } %>
+    </div>
+    <hr>
+    <a href="/" class="btn btn-primary btn-block">VOLTAR PARA O ÍNICIO</a>
+    </div> 
+       
+</body>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="/js/js.js"></script>   
+
+</html>
