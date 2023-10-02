@@ -14,6 +14,122 @@ app.use(bodyParser.json());
 app.get("/", (req, res) => {
     res.render("index");
 });
+//*************************************************ROTAS DAS PÁGINAS */
+app.get("/lpd1", (req, res) => {
+    res.render("lpd1");
+});
+
+app.get("/lpd3", (req, res) => {
+    res.render("lpd3");
+});
+
+app.get("/lpd8", (req, res) => {
+    res.render("lpd8");
+});
+
+app.get("/lpd10", (req, res) => {
+    res.render("lpd10");
+});
+
+app.get("/lpd11", (req, res) => {
+    res.render("lpd11");
+});
+
+app.get("/lpd12", (req, res) => {
+    res.render("lpd12");
+});
+
+app.get("/lpd15", (req, res) => {
+    res.render("lpd15");
+});
+
+app.get("/md2", (req, res) => {
+    res.render("md2");
+});
+
+app.get("/md3", (req, res) => {
+    res.render("md3");
+});
+
+app.get("/md4", (req, res) => {
+    res.render("md4");
+});
+
+app.get("/md5", (req, res) => {
+    res.render("md5");
+});
+
+app.get("/md6", (req, res) => {
+    res.render("md6");
+});
+
+app.get("/md7", (req, res) => {
+    res.render("md7");
+});
+
+app.get("/md8", (req, res) => {
+    res.render("md8");
+});
+
+app.get("/md9", (req, res) => {
+    res.render("md9");
+});
+
+app.get("/md10", (req, res) => {
+    res.render("md10");
+});
+
+app.get("/md11", (req, res) => {
+    res.render("md11");
+});
+
+app.get("/md12", (req, res) => {
+    res.render("md12");
+});
+
+app.get("/md18", (req, res) => {
+    res.render("md18");
+});
+
+app.get("/md19", (req, res) => {
+    res.render("md19");
+});
+
+app.get("/md20", (req, res) => {
+    res.render("md20");
+});
+
+app.get("/md21", (req, res) => {
+    res.render("md21");
+});
+
+app.get("/md22", (req, res) => {
+    res.render("md22");
+});
+
+app.get("/md23", (req, res) => {
+    res.render("md23");
+});
+
+app.get("/md24", (req, res) => {
+    res.render("md24");
+});
+
+app.get("/md25", (req, res) => {
+    res.render("md25");
+});
+
+app.get("/md26", (req, res) => {
+    res.render("md26");
+});
+
+app.get("/md27", (req, res) => {
+    res.render("md27");
+});
+
+app.get("/md28", (req, res) => {
+    res.render("md28");
+});
 //rota para a página do Descritor 4 de Língua Portuguesa
 app.get("/lpd4", (req, res) => {
     res.render("lpd4");

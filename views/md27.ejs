@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Matemática D27</title>
+</head>
+<body class="bg-primary">
+  <div class="h3 text-lg-center text-white">ESCOLA MUNICIPAL JUSLANY DE SOUZA FLORES</div>
+      <div class="h3 text-lg-center text-white">5º ANO TURMA A</div>  
+  <hr>
+  <header class="container-sm">
+    <h4>D27 - Ler informações e dados apresentados em tabelas.</h4>
+  </header>
+  <br>
+  <br>
+  <br>
+    <div class="container-sm">
+      
+      <form method="POST" action="/gabarito_matd27" onsubmit="return validarFormulario()">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">@</span>
+          <input type="text" class="form-control" placeholder="Digite seu nome aqui" aria-label="Digite seu nome aqui" aria-describedby="basic-addon1" name="name" id="name">
+        </div>
+        <div class="container-sm">
+
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <h5 class="card-title">QUESTÃO 1</h5>
+                
+                    <p class="card-text">A tabela a seguir mostra o número de alunos em cada série de uma escola. Quantos alunos estão na 5ª série?</p>
+                
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Série</th>
+                                <th>Número de Alunos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1ª Série</td>
+                                <td>120</td>
+                            </tr>
+                            <tr>
+                                <td>2ª Série</td>
+                                <td>130</td>
+                            </tr>
+                            <tr>
+                                <td>3ª Série</td>
+                                <td>110</td>
+                            </tr>
+                            <tr>
+                                <td>4ª Série</td>
+                                <td>95</td>
+                            </tr>
+                            <tr>
+                                <td>5ª Série</td>
+                                <td>140</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <div class="form-group">
+                        <div class="btn-group" data-toggle="buttons">
+                            <ol type="A">
+                                <li><input type="radio" name="q1" value="A" maxlength="1">120</li>
+                                <li><input type="radio" name="q1" value="B" maxlength="1">130</li>
+                                <li><input type="radio" name="q1" value="C" maxlength="1">110</li>
+                                <li><input type="radio" name="q1" value="D" maxlength="1">140</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <h5 class="card-title">QUESTÃO 2</h5>
+                
+                    <p class="card-text">A tabela a seguir mostra as vendas mensais de um produto em uma loja. Qual foi o mês com o maior número de vendas?</p>
+                
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Mês</th>
+                                <th>Vendas (em unidades)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Janeiro</td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <td>Fevereiro</td>
+                                <td>92</td>
+                            </tr>
+                            <tr>
+                                <td>Março</td>
+                                <td>78</td>
+                            </tr>
+                            <tr>
+                                <td>Abril</td>
+                                <td>105</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <div class="form-group">
+                        <div class="btn-group" data-toggle="buttons">
+                            <ol type="A">
+                                <li><input type="radio" name="q2" value="A" maxlength="1">Janeiro</li>
+                                <li><input type="radio" name="q2" value="B" maxlength="1">Fevereiro</li>
+                                <li><input type="radio" name="q2" value="C" maxlength="1">Março</li>
+                                <li><input type="radio" name="q2" value="D" maxlength="1">Abril</li>
+                            </ol>
+                        </div>
+                    </div>
+                  </div>                        
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="container">
+                  <h5 class="card-title">QUESTÃO 3</h5>
+              
+                  <p class="card-text">A tabela abaixo mostra as notas de quatro estudantes em um teste. Qual é a média das notas?</p>
+              
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th>Estudante</th>
+                              <th>Nota</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>João</td>
+                              <td>85</td>
+                          </tr>
+                          <tr>
+                              <td>Maria</td>
+                              <td>92</td>
+                          </tr>
+                          <tr>
+                              <td>Carlos</td>
+                              <td>78</td>
+                          </tr>
+                          <tr>
+                              <td>Laura</td>
+                              <td>105</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              
+                  <div class="form-group">
+                      <div class="btn-group" data-toggle="buttons">
+                          <ol type="A">
+                              <li><input type="radio" name="q3" value="A" maxlength="1">90</li>
+                              <li><input type="radio" name="q3" value="B" maxlength="1">88</li>
+                              <li><input type="radio" name="q3" value="C" maxlength="1">92,5</li>
+                              <li><input type="radio" name="q3" value="D" maxlength="1">80</li>
+                          </ol>
+                      </div>
+                  </div>
+              </div>
+                           
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <h5 class="card-title">QUESTÃO 4</h5>
+                
+                    <p class="card-text">A tabela a seguir apresenta o número de gols marcados por uma equipe de futebol em cada um dos últimos cinco jogos. Qual foi o jogo em que a equipe marcou mais gols?</p>
+                
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Jogo</th>
+                                <th>Número de Gols</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jogo 1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Jogo 2</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Jogo 3</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Jogo 4</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Jogo 5</td>
+                                <td>4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <div class="form-group">
+                        <div class="btn-group" data-toggle="buttons">
+                            <ol type="A">
+                                <li><input type="radio" name="q4" value="A" maxlength="1">Jogo 1</li>
+                                <li><input type="radio" name="q4" value="B" maxlength="1">Jogo 2</li>
+                                <li><input type="radio" name="q4" value="C" maxlength="1">Jogo 3</li>
+                                <li><input type="radio" name="q4" value="D" maxlength="1">Jogo 5</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                             
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <h5 class="card-title">QUESTÃO 5</h5>
+                
+                    <p class="card-text">A tabela abaixo mostra as alturas de cinco alunos em centímetros. Qual é a altura média desses alunos?</p>
+                
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Aluno</th>
+                                <th>Altura (cm)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lucas</td>
+                                <td>160</td>
+                            </tr>
+                            <tr>
+                                <td>Maria</td>
+                                <td>155</td>
+                            </tr>
+                            <tr>
+                                <td>João</td>
+                                <td>165</td>
+                            </tr>
+                            <tr>
+                                <td>Carla</td>
+                                <td>158</td>
+                            </tr>
+                            <tr>
+                                <td>Pedro</td>
+                                <td>170</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <div class="form-group">
+                        <div class="btn-group" data-toggle="buttons">
+                            <ol type="A">
+                                <li><input type="radio" name="q5" value="A" maxlength="1">162,0 cm</li>
+                                <li><input type="radio" name="q5" value="B" maxlength="1">158,4 cm</li>
+                                <li><input type="radio" name="q5" value="C" maxlength="1">161,6 cm</li>
+                                <li><input type="radio" name="q5" value="D" maxlength="1">162,5 cm</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+              
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <h5 class="card-title">QUESTÃO 6</h5>
+                
+                    <p class="card-text">A tabela a seguir apresenta as temperaturas máximas em cinco cidades durante uma semana. Qual cidade teve a temperatura máxima mais alta?</p>
+                
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Cidade</th>
+                                <th>Temperatura Máxima (°C)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>São Paulo</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <td>Rio de Janeiro</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>Curitiba</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>Salvador</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>Fortaleza</td>
+                                <td>31</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <div class="form-group">
+                        <div class="btn-group" data-toggle="buttons">
+                            <ol type="A">
+                                <li><input type="radio" name="q6" value="A" maxlength="1">São Paulo</li>
+                                <li><input type="radio" name="q6" value="B" maxlength="1">Salvador</li>
+                                <li><input type="radio" name="q6" value="C" maxlength="1">Curitiba</li>
+                                <li><input type="radio" name="q6" value="D" maxlength="1">Rio de Janeiro</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <h5 class="card-title">QUESTÃO 7</h5>
+                
+                    <p class="card-text">A tabela a seguir mostra a quantidade de doces vendidos por quatro amigos durante uma semana. Qual amigo vendeu mais doces?</p>
+                
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Amigo</th>
+                                <th>Segunda</th>
+                                <th>Terça</th>
+                                <th>Quarta</th>
+                                <th>Quinta</th>
+                                <th>Sexta</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lucas</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>8</td>
+                                <td>15</td>
+                                <td>11</td>
+                                <td>?</td>
+                            </tr>
+                            <tr>
+                                <td>Maria</td>
+                                <td>14</td>
+                                <td>10</td>
+                                <td>9</td>
+                                <td>13</td>
+                                <td>12</td>
+                                <td>?</td>
+                            </tr>
+                            <tr>
+                                <td>João</td>
+                                <td>12</td>
+                                <td>11</td>
+                                <td>7</td>
+                                <td>14</td>
+                                <td>9</td>
+                                <td>?</td>
+                            </tr>
+                            <tr>
+                                <td>Carla</td>
+                                <td>9</td>
+                                <td>13</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>14</td>
+                                <td>?</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <div class="form-group">
+                        <div class="btn-group" data-toggle="buttons">
+                            <ol type="A">
+                                <li><input type="radio" name="q7" value="A" maxlength="1">Lucas</li>
+                                <li><input type="radio" name="q7" value="B" maxlength="1">Maria</li>
+                                <li><input type="radio" name="q7" value="C" maxlength="1">João</li>
+                                <li><input type="radio" name="q7" value="D" maxlength="1">Carla</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                
+              
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <h5 class="card-title">QUESTÃO 8</h5>
+                
+                    <p class="card-text">A tabela a seguir mostra o saldo de quatro contas bancárias no início e no final de um mês. Qual conta teve o maior aumento de saldo?</p>
+                
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Conta Bancária</th>
+                                <th>Saldo Inicial (R$)</th>
+                                <th>Saldo Final (R$)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Conta A</td>
+                                <td>1500</td>
+                                <td>1750</td>
+                            </tr>
+                            <tr>
+                                <td>Conta B</td>
+                                <td>2200</td>
+                                <td>2400</td>
+                            </tr>
+                            <tr>
+                                <td>Conta C</td>
+                                <td>1800</td>
+                                <td>1900</td>
+                            </tr>
+                            <tr>
+                                <td>Conta D</td>
+                                <td>2500</td>
+                                <td>2800</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <div class="form-group">
+                        <div class="btn-group" data-toggle="buttons">
+                            <ol type="A">
+                                <li><input type="radio" name="q8" value="A" maxlength="1">Conta A</li>
+                                <li><input type="radio" name="q8" value="B" maxlength="1">Conta B</li>
+                                <li><input type="radio" name="q8" value="C" maxlength="1">Conta C</li>
+                                <li><input type="radio" name="q8" value="D" maxlength="1">Conta D</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <h5 class="card-title">QUESTÃO 9</h5>
+                
+                    <p class="card-text">A tabela a seguir mostra as vendas mensais de quatro lojas em um shopping. Qual loja teve a maior receita total no mês?</p>
+                
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Loja</th>
+                                <th>Vendas (R$)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Loja A</td>
+                                <td>4500</td>
+                            </tr>
+                            <tr>
+                                <td>Loja B</td>
+                                <td>5200</td>
+                            </tr>
+                            <tr>
+                                <td>Loja C</td>
+                                <td>4800</td>
+                            </tr>
+                            <tr>
+                                <td>Loja D</td>
+                                <td>5500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <div class="form-group">
+                        <div class="btn-group" data-toggle="buttons">
+                            <ol type="A">
+                                <li><input type="radio" name="q9" value="A" maxlength="1">Loja C</li>
+                                <li><input type="radio" name="q9" value="B" maxlength="1">Loja B</li>
+                                <li><input type="radio" name="q9" value="C" maxlength="1">Loja D</li>
+                                <li><input type="radio" name="q9" value="D" maxlength="1">Loja A</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+              
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <h5 class="card-title">QUESTÃO 10</h5>
+                
+                    <p class="card-text">A tabela a seguir mostra a distância percorrida por quatro carros em uma viagem de 5 horas. Qual carro teve a maior velocidade média durante a viagem?</p>
+                
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Carro</th>
+                                <th>Distância percorrida (km)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Carro A</td>
+                                <td>250</td>
+                            </tr>
+                            <tr>
+                                <td>Carro B</td>
+                                <td>220</td>
+                            </tr>
+                            <tr>
+                                <td>Carro C</td>
+                                <td>280</td>
+                            </tr>
+                            <tr>
+                                <td>Carro D</td>
+                                <td>300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <div class="form-group">
+                        <div class="btn-group" data-toggle="buttons">
+                            <ol type="A">
+                                <li><input type="radio" name="q10" value="A" maxlength="1">Carro A</li>
+                                <li><input type="radio" name="q10" value="B" maxlength="1">Carro B</li>
+                                <li><input type="radio" name="q10" value="C" maxlength="1">Carro C</li>
+                                <li><input type="radio" name="q10" value="D" maxlength="1">Carro D</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                            
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          
+          <br>           
+          <br>
+
+        </div>
+
+                
+        <div class="d-grid gap-2 m-xl-3">        
+          <button type="reset" class="btn btn-danger">LIMPAR</button>
+          <button type="submit" class="btn btn-success">RESPONDER</button>
+        </div>
+      </form>
+    </div>
+   
+     
+</body>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="/js/script.js"></script>
+</html>
