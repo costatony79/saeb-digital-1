@@ -119,3 +119,12 @@ body > .h3.text-lg-center { text-align: center; padding: .5rem 1rem 0; }
 @media (max-width: 576px) {
     body > .h3.text-lg-center { font-size: 1.3rem; }
 }
+/* Questões em duas colunas: lado a lado no computador, uma abaixo da outra
+   no celular e em tablets em pé (telas com menos de 768px). */
+@media (max-width: 767.98px) {
+    .row > .col, .row > [class*="col-"] {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .row > .col + .col, .row > [class*="col-"] + [class*="col-"] { margin-top: 1rem; }
+}
