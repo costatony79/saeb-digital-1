@@ -4,7 +4,9 @@ body{
 }
 header{
     width: 100%;
-    height: 10vh;
+    height: auto;          /* antes: 10vh fixo, e títulos longos invadiam o campo do nome */
+    min-height: 10vh;
+    margin-bottom: 1rem;
     text-align: center;
     color: white;
     margin-top: 2vh;
@@ -83,4 +85,37 @@ input[type=radio], input[type=checkbox]  {
     .cartao-resposta tbody tr { display: grid; grid-template-columns: repeat(5, 1fr); }
     .cartao-resposta td { border: none; padding: .5rem .1rem; }
     .opcoes-cartao::before { content: attr(data-q); font-weight: bold; font-size: .85rem; }
+}
+
+/* ---------- Organização da página (títulos e imagens) ---------- */
+header h4 {
+    padding: .5rem .75rem;
+    overflow-wrap: break-word;
+    line-height: 1.35;
+}
+/* Imagens nunca passam da largura da caixa onde estão. */
+img {
+    max-width: 100%;
+    height: auto;
+}
+.card, .card-body { min-width: 0; overflow-wrap: break-word; }
+@media (max-width: 576px) {
+    header h4 { font-size: 1.15rem; }
+}
+/* O recuo de parágrafo (2em) empurrava as imagens para fora da caixa. */
+p:has(img) { text-indent: 0; }
+p > img:only-child { display: block; margin: .5rem auto; }
+/* Linhas do grid fora de um contêiner passavam da tela e faziam a página rolar para o lado. */
+.row { margin-left: 0; margin-right: 0; }
+/* Tabelas das questões: no celular, letra menor e, se ainda não couber,
+   rolagem só dentro da tabela (a página não rola para o lado). */
+.card-body table { display: block; max-width: 100%; overflow-x: auto; }
+@media (max-width: 576px) {
+    .card-body table { font-size: .85rem; }
+    .card-body table th, .card-body table td { padding: .4rem; }
+}
+/* Nome da escola no topo: centralizado e menor no celular. */
+body > .h3.text-lg-center { text-align: center; padding: .5rem 1rem 0; }
+@media (max-width: 576px) {
+    body > .h3.text-lg-center { font-size: 1.3rem; }
 }
