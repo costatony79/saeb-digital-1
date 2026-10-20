@@ -60,7 +60,10 @@
   function blocosDaAtividade() {
     // Cada bloco da página que tem o formulário, alguma questão ou os botões
     // de responder/limpar (em algumas atividades eles ficam fora do formulário).
-    const alvos = [form, ...document.querySelectorAll('input[name^="q"], button[type="submit"], button[type="reset"]')];
+    const alvos = [
+      form,
+      ...document.querySelectorAll('input[name="name"], input[name^="q"], button[type="submit"], button[type="reset"]'),
+    ];
     const blocos = new Set();
     alvos.forEach((el) => {
       let bloco = el;
@@ -96,10 +99,19 @@
     });
   });
 
+  // O botão LIMPAR também apaga o que está fora do formulário.
+  form.addEventListener("reset", () => {
+    document.querySelectorAll('input[name="name"], input[name^="q"]').forEach((campo) => {
+      if (campo.type === "radio") campo.checked = false;
+      else campo.value = "";
+    });
+  });
+
   form.addEventListener("submit", (evento) => {
     evento.preventDefault();
 
-    const campoNome = form.querySelector('input[name="name"]');
+    // Em algumas atividades o campo do nome fica fora do formulário.
+    const campoNome = document.querySelector('input[name="name"]');
     const nome = campoNome ? campoNome.value.trim() : "";
     const respostas = Array.from({ length: TOTAL }, (_, i) => respostaDe(i + 1));
     const vazias = respostas.map((r, i) => (r ? null : i + 1)).filter(Boolean);
